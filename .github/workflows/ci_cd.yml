@@ -12,5 +12,8 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     steps:
-      - name: "test"
-        run: echo "hello world"  
+      - name: Checkout Code
+        uses: actions/checkout@v6.0.2
+
+      - name: list files
+        run: ls -al
