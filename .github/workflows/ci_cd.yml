@@ -26,3 +26,13 @@ jobs:
       - name: Run Prettierrc
         run: npx prettier --write .
 
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6.0.2
+
+      - name: List Files
+        run: ls -al
+  
