@@ -1,0 +1,16 @@
+name: introduction-to-vercel-dockerhub
+
+on:
+  push:
+    branches:
+     - main
+  pull_request:
+    branches:
+     - main
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "test"
+        run: echo "hello world"  
