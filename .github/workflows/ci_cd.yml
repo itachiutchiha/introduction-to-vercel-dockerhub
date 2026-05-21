@@ -39,7 +39,7 @@ jobs:
           du -sh *
   
       - name: Build Docker Image
-        run: docker build -t Attack_on_titan:latest .
+        run: docker build -t attack_on_titan:latest .
   
       - name: List Files 2
         run: |
