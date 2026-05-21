@@ -33,11 +33,18 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v6.0.2
 
-      - name: Build Docker Image
-        run: docker build -t test:latest .
+      - name: List Files 1
+        run: |
+          ls -al
+          du -sh *
   
-      - name: List Files
-        run: ls -al
+      - name: Build Docker Image
+        run: docker build -t Attack_on_titan:latest .
+  
+      - name: List Files 2
+        run: |
+          ls -al
+          du -sh *
         
       - name: Docker image
         run: docker images
