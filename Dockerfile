@@ -1,12 +1,14 @@
 FROM node:20-alpine 
 
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm ci
+
 COPY . .
 
-RUN npm install
 RUN npm run build
-RUN rm -rf node_modules && npm cache clean --force
-
-
 
 EXPOSE 3000
 
