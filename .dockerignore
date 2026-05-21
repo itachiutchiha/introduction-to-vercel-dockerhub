@@ -1,10 +1,10 @@
-node_modules
-npm-debug.log
 .git
-.github
-.next
-.env
-.env.local
-dist
-build
-coverage
+    .gitignore
+    .github
+next - env.d.ts
+README.md
+AGENTS.md
+CLAUDE.md
+package - lock.json
+tsconfig.json
+eslint.config.mjs
