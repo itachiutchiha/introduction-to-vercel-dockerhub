@@ -3,10 +3,10 @@ name: introduction-to-vercel-dockerhub
 on:
   push:
     branches:
-     - main
+      - main
   pull_request:
     branches:
-     - main
+      - main
 
 jobs:
   setup:
@@ -17,7 +17,7 @@ jobs:
 
       - name: Install Prettier
         run: npm install --save-dev --save-exact prettier
-      - name: Create Prettierrc File 
+      - name: Create Prettierrc File
         run: |
           echo '{
               "tabWidth": 4,
@@ -34,17 +34,13 @@ jobs:
         uses: actions/checkout@v6.0.2
 
       - name: List Files 1
-        run: |
-          ls -al
-          du -sh *
-  
-      - name: Build Docker Image
-        run: docker build -t attack_on_titan:latest .
-  
+        run: ls -al
+
+      - name: Build Docker Image whit debug output
+        run: docker build --progress=plain -t attack_on_titan:latest .
+
       - name: List Files 2
-        run: |
-          ls -al
-          du -sh *
-        
+        run: ls -al
+
       - name: Docker image
         run: docker images
