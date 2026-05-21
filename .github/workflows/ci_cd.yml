@@ -19,7 +19,9 @@ jobs:
         run: npm install --save-dev --save-exact prettier
       - name: Create prettierrc file 
         run: |
-          echo {
+          echo '{
               "tabWidth": 4,
               "semi": true
-          } > prettierrc
+          }' > .prettierrc
+          cat .prettierrc
+
