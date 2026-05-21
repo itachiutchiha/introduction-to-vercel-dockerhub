@@ -38,3 +38,6 @@ jobs:
   
       - name: List Files
         run: ls -al
+        
+      - name: Docker image
+        run: docker images
