@@ -51,7 +51,7 @@ jobs:
         run: docker images
 
       - name: Add Tag Name
-        run: docker tag attack_on_titan:latest ${{ secrets.DOCKER_USERNAME }}/attack_on_titan:latest
+        run: docker tag attack_on_titan:latest ${{ secrets.DOCKER_USERNAME }}/attack_on_titan:v1.0.0
 
       - name: List Docker Images After Tag
         run: docker images
