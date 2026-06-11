@@ -1,0 +1,7 @@
+version: "1.0"
+
+services:
+  attack_on_titan:
+    image: oussamaaaaadd/attack_on_titan:v1.0.0
+    ports:
+      - "3000:3000"
