@@ -14,7 +14,7 @@ export default function Home() {
 
         {/* Change your login name here */}
         <div className="inline-flex items-center rounded-lg bg-gray-100 px-4 py-2 font-mono text-sm font-medium text-gray-800">
-          Login: itachi
+          Login: oaitlahj
         </div>
       </div>
     </main>
