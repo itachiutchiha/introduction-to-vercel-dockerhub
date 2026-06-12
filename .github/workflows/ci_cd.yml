@@ -55,8 +55,5 @@ jobs:
       - name: List Docker Images After Tag
         run: docker images
 
-      - name: Docker image
-        run: docker images
-
       - name: Push to Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/attack_on_titan:v1.0.0
